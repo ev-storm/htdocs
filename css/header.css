@@ -1,0 +1,19 @@
+.menu{
+	position: fixed;
+	top: 0;
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 10vw;
+	margin: 0;
+	background-color: antiquewhite;
+}
+.logo{
+	width: 5vw;
+	height: 5vw;
+	background-color: #161616;
+}
+ul{
+	list-style-type: none;
+	display: flex;
+}
