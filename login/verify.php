@@ -3,7 +3,7 @@ session_start();
 
 // Заданные логин и пароль
 $correct_username = 'admin';
-$correct_password = '1111';
+$correct_password = 'asas';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];

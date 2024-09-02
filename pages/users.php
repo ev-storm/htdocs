@@ -1,5 +1,3 @@
-
-
 <?php
 session_start();
 // // Функция автоматического выхода через 2 минуты (120 секунд)
@@ -18,7 +16,7 @@ if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
 }
 
 // Подключение к базе данных
-$conn = new mysqli("localhost", "root", "root", "DB");
+$conn = new mysqli("localhost", "u2367564_admin", "lV4zW8oH3gfK4pS6", "u2367564_DB");
 if ($conn->connect_error) {
     die("Ошибка подключения: " . $conn->connect_error);
 }

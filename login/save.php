@@ -1,8 +1,10 @@
 <?php
+ob_start(); // Начало буферизации вывода
+
 $servername = "localhost";
-$username = "root";
-$password = "root";
-$dbname = "DB";
+$username = "u2367564_admin";
+$password = "lV4zW8oH3gfK4pS6";
+$dbname = "u2367564_DB";
 
 $name = $_POST['name'];
 $phone = $_POST['phone'];
@@ -23,6 +25,10 @@ if ($conn->query($sql) === TRUE) {
 
 $conn->close();
 
+// Перенаправление после выполнения всех операций
 header('Location: ../index.php');
 exit();
+
+// Конец буферизации и сброс буфера
+ob_end_flush();
 ?>
